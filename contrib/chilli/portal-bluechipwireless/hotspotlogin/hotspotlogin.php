@@ -34,6 +34,13 @@
 # *********************************************************************************************************
 # */
 
+# Repair the iOS > 10.2 portal page problem
+
+if (!preg_match ("/CaptiveNetworkSupport/", $_SERVER["HTTP_USER_AGENT"]))
+{
+    $isAppleDevice=1;
+}
+
 # Shared secret used to encrypt challenge with. Prevents dictionary attacks.
 # You should change this to your own shared secret.
 $uamsecret = "enginx";
