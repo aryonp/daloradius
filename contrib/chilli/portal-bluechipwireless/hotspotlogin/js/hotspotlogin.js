@@ -1,5 +1,8 @@
 <?php
 
+if(!isAppleDevice==1)
+{
+
 echo "
 
 var blur = 0;
@@ -136,5 +139,6 @@ function doOnBlur(result) {
 
 
 ";
+}
 
 ?>
